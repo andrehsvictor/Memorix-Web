@@ -1,0 +1,25 @@
+<div class="w-full h-full flex justify-center items-center">
+    <div class="w-96">
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-bold text-indigo-500">Memorix</h1>
+            <p class="text-gray-500">Log in to your account</p>
+        </div>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                <input type="email" id="email" formControlName="email"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" formControlName="password"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <button type="submit"
+                class="w-full bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Log
+                in</button>
+            <p class="text-center mt-4 text-sm text-gray-500">Don't have an account? <a routerLink="/register"
+                    class="text-indigo-500">Register</a></p>
+        </form>
+    </div>
+</div>
