@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Nunito, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
-export const poppins = Poppins({
-  variable: "--font-poppins",
-  weight: "500",
-});
+export const nunito = Nunito();
+
+export const nunitoSans = Nunito_Sans();
 
 export const metadata: Metadata = {
   title: "Memorix",
+  keywords: [
+    "memorize",
+    "memorization",
+    "flashcards",
+    "study",
+    "learning",
+    "education",
+  ],
 };
 
 export default function RootLayout({
@@ -18,7 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>{children}</body>
+      <body
+        className={`${nunito.className} ${nunitoSans.className} antialiased bg-background text-text`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
